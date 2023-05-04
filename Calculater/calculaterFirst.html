@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body>
+
+    <style>
+        button{
+            width: 60px;
+            height: 40px;
+        }
+
+        form{
+            background-color: orange;
+            width:max-content;
+            height:max-content;
+            padding:2px ;
+        }
+
+        table{
+            width: 250px;
+        }
+
+        input{
+            width: 240px;
+            height: 40px;
+            font-size: large;
+        }
+
+        span{
+            background-color:olive;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align:left;
+            font-size:larger;
+        }
+
+    </style>
+   
+   <span>
+     CALCULATER (First Project) 
+    </span>
+    <br>
+    <br>
+    <form name="hesapkitap">
+        <table>
+            <tr>
+                <th colspan="4"> <input name="ekran" type="text"> </th>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=1">1</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=2">2</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=3">3</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+='/'">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=4">4</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=5">5</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=6">6</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+='*'">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=7">7</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=8">8</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=9">9</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+='-'">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value=''">C</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+=0">0</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value+='+'">+</button></td>
+                <td><button type="button" onclick="document.hesapkitap.ekran.value=eval(document.hesapkitap.ekran.value)">=</button></td>
+            </tr>
+            
+        </table>
+
+
+    </form>
+
+</body>
+</html>
