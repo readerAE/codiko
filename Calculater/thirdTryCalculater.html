@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Try Calculater</title>
+</head>
+<body>
+    <style>
+       
+       div{
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+       }
+       
+       #birinci{
+        background-color: rgb(255, 140, 0);
+       }
+
+       #ikinci{
+        background-color: aquamarine;
+       }
+       #ucuncu{
+        background-color: rgb(243, 20, 20);
+       }
+
+       button{
+        width: 50px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 7px;
+       }
+       input{
+        width: 210px;
+        height: 30px;
+       }
+       button:hover{
+        background-color: darkmagenta;
+       }
+
+
+
+    </style>
+    <div id="birinci">
+        <form name="calcal">
+            <table>
+                <tr>
+                    <th colspan="4"><input name="monitor1" type="text"></th>
+                </tr>
+                <tr>
+                    <td><button id="secim" type="button" onclick="document.calcal.monitor1.value+=1">1</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=3">3</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=2">2</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+='/'">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=5">5</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=4">4</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=6">6</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+='*'">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=7">7</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=8">8</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=9">9</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+='-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal.monitor1.value=''">C</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+=0">0</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value=eval(document.calcal.monitor1.value)">=</button></td>
+                    <td><button type="button" onclick="document.calcal.monitor1.value+='+'">+</button></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <div id="ikinci">
+        <form name="calcal2">
+            <table>
+                <tr>
+                    <th colspan="4"><input name="monitor" type="text"></th>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=1">1</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=3">3</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=2">2</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+='/'">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=4">4</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=5">5</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=6">6</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+='*'">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=7">7</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=8">8</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=9">9</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+='-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal2.monitor.value=''">C</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+=0">0</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value=eval(document.calcal.monitor.value)">=</button></td>
+                    <td><button type="button" onclick="document.calcal2.monitor.value+='+'">+</button></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <div id="ucuncu">
+        <form name="calcal3">
+            <table>
+                <tr>
+                    <th colspan="4"><input name="monitor2" type="text"></th>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=1">1</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=3">3</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=2">2</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+='/'">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=4">4</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=5">5</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=6">6</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+='*'">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=7">7</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=8">8</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=9">9</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+='-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value=''">C</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+=0">0</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value=eval(document.calcal.monitor2.value)">=</button></td>
+                    <td><button type="button" onclick="document.calcal3.monitor2.value+='+'">+</button></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    
+</body>
+</html>
