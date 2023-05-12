@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <title>The Clock Of Codiko</title>
+    <style>
+        body{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-family: Darumadrop One, sans-serif;
+            color: aliceblue;
+            background-color: blueviolet;
+        }
+        #general #head{
+            font-size: 30px;
+            display:flex;
+            justify-content:center;
+        }
+        .speech{
+            display:flex;
+            color: aliceblue;
+            font-size: 15px;
+        }
+        img{
+            width: 50px;
+            height: auto;
+        }
+        #currentTime{
+            background-color:lightcyan;
+            color:darkslateblue;
+            display: inline-block;
+            font-weight: bold;
+            border: 0.5px solid slateblue;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+        }
+        #general{
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+<div id="general">
+    <div id="head">Catch The Train</div>
+    <div>
+       <span class="speech"><img src="/spdy.png"    alt="speedy"><p> &nbsp; : &nbsp;Hello Señor, Could you please tell me? What time it is?</p></span>
+       <span class="speech"><img src="/bgsbny.png"  alt="bugsbunny"><p>&nbsp; : &nbsp;Hi, Sure. Time is: &nbsp;<span id="currentTime"></span></p> </span>
+       <span class="speech"><img src="/spdy.png"    alt="speedy"><p>&nbsp; : &nbsp;Okey. I have to catch the train.</p></span>
+       <span class="speech"><img src="/bgsbny.png"  alt="bugsbunny"><p>&nbsp; : &nbsp;I see, Good Luck. Follow the red lines.</p></span>
+       <span class="speech"><img src="/spdy.png"    alt="speedy"><p>&nbsp; : &nbsp;Alright. Thanks. &nbsp;Vamos corre. Andale, andale arriba... Yeppaaa...</p></span>
+    </div>
+</div>
+    <script>
+        function editOfTime (value){
+            var stringTo = value.toString();
+            var lengthto = stringTo.length;
+
+            if (lengthto===1){
+                return 0 + stringTo;
+            } else {
+                return stringTo;
+            }
+        }
+        function counter (){
+            var time    = new Date();
+            var hours   = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var timeString = editOfTime(hours) + ":" + editOfTime(minutes) + ":" + editOfTime(seconds);
+            document.querySelector("#currentTime").innerHTML = timeString;
+            }
+        setInterval(counter,1000);
+    </script>
+</body>
+</html>
