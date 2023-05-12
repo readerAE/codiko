@@ -11,7 +11,7 @@
         <p>Hello Senorita, Could you please tell me the time ?</p>
         <p>Hi, Sure. Time is: &nbsp;<span id="currentTime"></span></p>
         <p>Okey. I have to catch the train.</p>
-        <p>I see, Good Luck. Follow the red lines. Vamos corre. Andale, andale arriba... </p>
+        <p>I see, Good Luck. Follow the red lines. </p>
         <p>Alright. Thanks.</p>
         <p>Vamos corre. Andale, andale arriba... Yeppaaa...</p>
     </div>
