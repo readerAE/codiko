@@ -51,7 +51,6 @@
             var minutes = time.getMinutes();
             var seconds = time.getSeconds();
             var timeString = editOfTime(hours) + ":" + editOfTime(minutes) + ":" + editOfTime(seconds);
-            document.getElementById("currentTime").innerHTML = timeString;
             document.querySelector("#currentTime").innerHTML = timeString;
             }
 
